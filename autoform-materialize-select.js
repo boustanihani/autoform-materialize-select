@@ -1,3 +1,8 @@
+// http://autoform-materialize-select.meteor.com
+
+// https://github.com/djhi/meteor-autoform-materialize/issues/64
+// https://github.com/Dogfalo/materialize/commit/cbcf4c8f6c229f42dba1dd3ccde1788d7f96ff80
+
 if (Meteor.isClient) {
 
     var totalValues = 5;
