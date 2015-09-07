@@ -1,0 +1,28 @@
+<body style="text-align:center">
+    
+    <br>
+    <br>
+    <a class="waves-effect waves-light btn" onclick="generateValues()">Generate Values</a>
+    <br>
+    <br>
+    <a class="waves-effect waves-light btn" onclick="randomSelect()">Random select</a>
+    <br>
+    <br>
+
+    <div class="row">
+        <div class="col s12 m6 offset-m3 l6 offset-l3">
+
+            {{#with currentDoc}}
+            
+                {{#autoForm id="myForm" type="normal" schema="mySchema" doc=this}}
+                
+                    {{> afQuickField name='mySelect'}}
+                    
+                {{/autoForm}}
+                
+            {{/with}}
+
+        </div>
+    </div>
+
+</body>
